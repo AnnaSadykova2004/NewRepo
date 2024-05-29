@@ -6,29 +6,26 @@ using System.Threading.Tasks;
 
 namespace PhotoEnhancer
 {
-    public class MonochromaticNoiseParameters : IParameters
+    public class RotationParameters : IParameters
     {
-        public double Coefficient { get; set; }
-
+        public double AngleInDegrees { get; set; }
         public ParameterInfo[] GetDescription()
         {
             return new[]
             {
                 new ParameterInfo()
                 {
-                    Name = "Интенсивность шума",
-                    MinValue = 0,
-                    MaxValue =1,
+                    Name = "Угол в °",
+                    MinValue = -360,
+                    MaxValue =360,
                     DefaultValue = 0,
-                    Increment = 0.01
+                    Increment = 5
                 }
             };
         }
-
         public void SetValues(double[] values)
         {
-            Coefficient = values[0];
+            AngleInDegrees = values[0];
         }
-
     }
 }
