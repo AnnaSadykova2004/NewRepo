@@ -51,14 +51,14 @@
             this.filtersComboBox.Location = new System.Drawing.Point(25, 55);
             this.filtersComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.filtersComboBox.Name = "filtersComboBox";
-            this.filtersComboBox.Size = new System.Drawing.Size(342, 28);
+            this.filtersComboBox.Size = new System.Drawing.Size(342, 33);
             this.filtersComboBox.TabIndex = 0;
             this.filtersComboBox.Visible = false;
             this.filtersComboBox.SelectedIndexChanged += new System.EventHandler(this.filtersComboBox_SelectedIndexChanged);
             // 
             // applyButton
             // 
-            this.applyButton.Location = new System.Drawing.Point(22, 645);
+            this.applyButton.Location = new System.Drawing.Point(25, 602);
             this.applyButton.Margin = new System.Windows.Forms.Padding(4);
             this.applyButton.Name = "applyButton";
             this.applyButton.Size = new System.Drawing.Size(130, 40);
@@ -88,6 +88,7 @@
             // 
             // mainMenuStrip
             // 
+            this.mainMenuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.mainMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mainMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem,
@@ -95,7 +96,7 @@
             this.exitToolStripMenuItem});
             this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.mainMenuStrip.Name = "mainMenuStrip";
-            this.mainMenuStrip.Size = new System.Drawing.Size(808, 31);
+            this.mainMenuStrip.Size = new System.Drawing.Size(808, 36);
             this.mainMenuStrip.TabIndex = 3;
             this.mainMenuStrip.Text = "menuStrip1";
             // 
@@ -103,7 +104,7 @@
             // 
             this.openToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(90, 27);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(105, 32);
             this.openToolStripMenuItem.Text = "Открыть";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -111,7 +112,7 @@
             // 
             this.saveToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(108, 27);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(125, 32);
             this.saveToolStripMenuItem.Text = "Сохранить";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -119,7 +120,7 @@
             // 
             this.exitToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(73, 27);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(85, 32);
             this.exitToolStripMenuItem.Text = "Выход";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -133,7 +134,7 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 701);
             this.Controls.Add(this.resultPictureBox);
