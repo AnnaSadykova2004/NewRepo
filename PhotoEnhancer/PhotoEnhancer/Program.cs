@@ -20,6 +20,9 @@ namespace PhotoEnhancer
             Application.SetCompatibleTextRenderingDefault(false);
 
             var mainForm = new MainForm();
+            //mainForm.AddFilter(new LighteningFilter());
+            //mainForm.AddFilter(new GrayScaleFilter());
+            //mainForm.AddFilter(new HueFilter());
 
             mainForm.AddFilter(new PixelFilter<LighteningParameters>(
                 "Осветление/затемнение",
@@ -48,6 +51,7 @@ namespace PhotoEnhancer
                     var noise = parameters.Coefficient * r + (1 - parameters.Coefficient) * q.L;
 
                     return Convertors.HSLToRGB(new PixelHSL(q.H, q.S, noise));
+
                 }
                 ));
 
@@ -86,6 +90,9 @@ namespace PhotoEnhancer
 
             mainForm.AddFilter(new TransformFilter<RotationParameters>(
                 "Поворот на произвольный угол", new RotationTransformer()));
+
+            mainForm.AddFilter(new TransformFilter<RightPerspectiveParameters>(
+                "Перспектива вправо", new RightPerspectiveTransformer()));
 
             Application.Run(mainForm);
         }
