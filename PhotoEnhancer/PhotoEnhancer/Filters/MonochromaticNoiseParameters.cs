@@ -8,26 +8,11 @@ namespace PhotoEnhancer
 {
     public class MonochromaticNoiseParameters : IParameters
     {
-        public double Coefficient {  get; set; }
-
-        public ParameterInfo[] GetDescription()
-        {
-            return new[]
-            {
-                new ParameterInfo()
-                {
-                    Name = "Интенсивность шума",
+        [ParameterInfo(Name = "Интенсивность шума",
                     MinValue = 0,
-                    MaxValue =1,
+                    MaxValue = 1,
                     DefaultValue = 0,
-                    Increment = 0.01
-                }
-            };
-        }
-
-        public void SetValues(double[] values)
-        {
-            Coefficient = values[0];
-        }
+                    Increment = 0.01)]
+        public double Coefficient { get; set; }
     }
 }
