@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace PhotoEnhancer
 {
-    public class EmptyParameters : IParameters { }
+    public interface IParameters { }
 }
