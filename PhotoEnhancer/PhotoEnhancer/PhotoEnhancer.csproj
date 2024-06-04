@@ -60,6 +60,8 @@
     <Compile Include="Filters\ParametrizedFilter.cs" />
     <Compile Include="Filters\PixelFilter.cs" />
     <Compile Include="Filters\Transformations\ITransformer.cs" />
+    <Compile Include="Filters\Transformations\RightProspectParameters.cs" />
+    <Compile Include="Filters\Transformations\RightProspectTransformer.cs" />
     <Compile Include="Filters\Transformations\RotationParameters.cs" />
     <Compile Include="Filters\Transformations\RotationTransformer.cs" />
     <Compile Include="Filters\Transformations\SimpleTransformer.cs" />
